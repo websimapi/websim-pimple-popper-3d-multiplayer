@@ -1,0 +1,18 @@
+{
+  "database": {
+    "schema": {
+      "leaderboard": {
+        "user_id": {
+          "type": "text",
+          "description": "The unique identifier of the user. This is the primary key."
+        },
+        "wins": {
+          "type": "integer",
+          "description": "Total number of rounds the user has won."
+        }
+      }
+    },
+    "instructions": "This database stores the total number of wins for each user in the Pimple Popper game. To update a user's win count, upsert a record into the 'leaderboard' collection with the user's ID as the 'id' and their new total wins."
+  }
+}
+
